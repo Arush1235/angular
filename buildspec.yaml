@@ -3,7 +3,6 @@ env:
     variables:
         
         S3_BUCKET: "arush-testing-angular"
-        BUILD_FOLDER: "output"
         BUILD_ENV: "prod"
 phases:
   install:
