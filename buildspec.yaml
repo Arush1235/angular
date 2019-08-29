@@ -1,7 +1,7 @@
 version: 0.2
 env:
     variables:
-        S3_BUCKET: "lastthistime"
+        S3_BUCKET: "lastthistimenew"
         BUILD_ENV: "prod"
         FOLDER   : "last-pipeline"
 phases:
@@ -17,7 +17,7 @@ phases:
       - ng build --$BUILD_ENV
   post_build:
     commands:
-      - aws s3 cp dist s3://$S3_BUCKET//$FOLDER --recursive
+      - aws s3 cp dist s3://$S3_BUCKET --recursive
 artifacts:
     files:
         - '**/*'
