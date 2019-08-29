@@ -15,10 +15,10 @@ phases:
   build:
     commands:
       - ng build --$BUILD_ENV
-      
+
   post_build:
     commands:
-      - aws s3 sync dist s3://S3_BUCKET
+      - aws s3 sync dist s3://$S3_BUCKET
 
 artifacts:
     files:
