@@ -1,7 +1,7 @@
 version: 0.2
 env:
     variables:
-        S3_BUCKET: "lastthistimenew"
+        S3_BUCKET: "newer-s3-bucket"
         BUILD_ENV: "prod"
         FOLDER   : "last-pipeline"
 phases:
